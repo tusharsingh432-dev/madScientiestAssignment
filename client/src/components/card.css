@@ -1,3 +1,7 @@
+hr {
+    border-top: 1.5px solid black;
+}
+
 .Card {
     border: 2px solid rgb(224, 223, 220) !important;
     padding: 10px;
@@ -29,4 +33,21 @@
     justify-content: space-between;
     min-width: 70px;
     align-items: baseline;
+}
+
+.Modal {
+    max-width: 400px;
+    border: none !important;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.ModalButtons {
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    width: 95%;
 }
