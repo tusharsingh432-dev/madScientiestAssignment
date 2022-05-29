@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const db = require('./db.js');
+const path = require('path');
 const Report = require('./reportModel');
 const app = express();
 app.use(express.json());
@@ -28,10 +29,17 @@ app.post('/api/report', async (req, res) => {
     }
 })
 
-app.get('/', (req, res) => {
-    res.send('Server Running///////');
-})
+app.use(express.static(path.join(__dirname, "client", "build")));
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
-app.listen(8000, () => {
+const port = process.env.PORT || 8000;
+
+// app.get('/', (req, res) => {
+//     res.send('Server Running///////');
+// })
+
+app.listen(port, () => {
     console.log('listening on port 8080');
 })
