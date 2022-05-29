@@ -5,7 +5,8 @@ hr {
 .Card {
     border: 2px solid rgb(224, 223, 220) !important;
     padding: 10px;
-    margin: 10px;
+    margin: auto;
+    margin-top: 30px;
     max-width: 300px;
     border-radius: 7px;
     text-align: left;
