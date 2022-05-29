@@ -1,0 +1,32 @@
+.Card {
+    border: 2px solid rgb(224, 223, 220) !important;
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 7px;
+    text-align: left;
+    font-size: small;
+    font-weight: 500;
+}
+
+.CardTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.CardIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CardIconsLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 70px;
+    align-items: baseline;
+}
